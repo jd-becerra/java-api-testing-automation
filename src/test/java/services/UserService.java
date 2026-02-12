@@ -27,7 +27,6 @@ public class UserService {
                 then();
     }
 
-
     public ValidatableResponse createUser(NewUser newUser) {
         return
             given().

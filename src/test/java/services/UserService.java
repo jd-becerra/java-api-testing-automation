@@ -3,6 +3,7 @@ package services;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import models.ExistingUser;
+import models.NewUser;
 
 import static io.restassured.RestAssured.given;
 
@@ -26,5 +27,12 @@ public class UserService {
             then();
     }
 
-
+    public ValidatableResponse createUser(NewUser newUser) {
+        return
+            given().
+                header("Content-Type", "application/json").
+            when().
+                post(endpoint).
+            then();
+    }
 }

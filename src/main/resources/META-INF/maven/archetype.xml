@@ -1,0 +1,9 @@
+<archetype>
+  <id>task-module-12-api-automation</id>
+  <sources>
+    <source>src/main/java/App.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/AppTest.java</source>
+  </testSources>
+</archetype>

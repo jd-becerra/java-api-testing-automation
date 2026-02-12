@@ -13,19 +13,20 @@ public class UserService {
     public ValidatableResponse getUsers() {
         return
             given().
-            when().
+                when().
                 get(endpoint).
-            then();
+                then();
     }
 
     public ValidatableResponse getUser(int id) {
         return
             given().
                 queryParam("id", id).
-            when().
+                when().
                 get(endpoint).
-            then();
+                then();
     }
+
 
     public ValidatableResponse createUser(NewUser newUser) {
         return

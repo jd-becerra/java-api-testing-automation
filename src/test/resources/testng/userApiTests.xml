@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="UserApiTestSuite" parallel="tests" thread-count="5">
+    <test name="UserApiTests_GetValidation">
+        <groups>
+            <run>
+                <include name="getValidation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UserApiTests"/>
+        </classes>
+    </test>
+
+    <test name="UserApiTests_PostValidation">
+        <groups>
+            <run>
+                <include name="postValidation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UserApiTests"/>
+        </classes>
+    </test>
+
+    <test name="UserApiTests_PutValidation">
+        <groups>
+            <run>
+                <include name="putValidation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UserApiTests"/>
+        </classes>
+    </test>
+
+    <test name="UserApiTests_DeleteValidation">
+        <groups>
+            <run>
+                <include name="deleteValidation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.UserApiTests"/>
+        </classes>
+    </test>
+
+</suite>
